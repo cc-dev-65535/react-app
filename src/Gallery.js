@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Gallery.css';
+import { Photo } from './Photo.js';
 
 function Gallery(props) {
     const url = 'http://jsonplaceholder.typicode.com/photos';
@@ -16,6 +17,7 @@ function Gallery(props) {
       })
       .then((photoData) => {
             console.log(photoData[0]);
+            photoData = photoData.slice(1, 100);
             setData(photoData);
             setLoading(false);
       })
@@ -25,13 +27,19 @@ function Gallery(props) {
       });
     }, []);
 
-    return (
-        <div className="Gallery">
-            {photoData.map((photo, i) => {
-                return <Photo {... photo} />
-            })}            
+    if (loading) {
+        <div className="gallery">
+            <p>LOADING...</p>
         </div>
-    );
+    } else {
+        return (
+            <div className="gallery">
+                {photoData.map((photo, i) => {
+                    return <Photo {... photo} key={i} />
+                })}            
+            </div>
+        );
+    }
 }
 
 export { Gallery };

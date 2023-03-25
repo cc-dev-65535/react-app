@@ -4,7 +4,7 @@ import { Gallery } from './Gallery.js';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

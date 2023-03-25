@@ -1,0 +1,8 @@
+.gallery {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    overflow: scroll;
+    border: 1px solid black;
+    overflow-y: hidden;
+}
