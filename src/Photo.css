@@ -1,6 +1,9 @@
 .photo {
     margin: 10px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .photo img {
@@ -11,5 +14,4 @@
 .photo span {
     position: absolute;
     rotate: 45deg;
-    top: 0;
 }
