@@ -12,7 +12,7 @@
     border: 2px solid black;
 }
 
-.photo span {
+.photo .title-text {
     position: absolute;
     rotate: 45deg;
     z-index: 1;

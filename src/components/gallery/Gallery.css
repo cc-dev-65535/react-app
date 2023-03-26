@@ -8,3 +8,9 @@
     border: 2px solid black;
     overflow-y: hidden;
 }
+
+.placeholder {
+    margin: 10px;
+    height: 604px;
+    width: 604px;
+}

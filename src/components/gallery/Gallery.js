@@ -5,13 +5,13 @@ function Gallery(props) {
     if (props.loading) {
         return (
             <div className="gallery">
-                <p>LOADING...</p>
+                <div className="placeholder"></div>
             </div>
         );
     } else if (props.error) {
         return (
             <div className="gallery">
-                <p>ERROR!</p>
+                <div className="placeholder"></div>
             </div>
         );
     } else {

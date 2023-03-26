@@ -17,8 +17,6 @@ function App() {
           return response.json();
     })
     .then((photoData) => {
-          console.log(photoData[0]);
-          photoData = photoData.slice(0, 50);
           setData(photoData);
           setLoading(false);
     })

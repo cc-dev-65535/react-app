@@ -3,8 +3,8 @@ import './Photo.css';
 function Photo(props) {
     return (
         <div className="photo">
-            <span>{props.title}</span>
-            <img src={props.url} />
+            <span className="title-text">{props.title}</span>
+            <img src={props.url} alt="random colour" />
         </div>
     );
 }

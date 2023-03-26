@@ -13,7 +13,7 @@ function Button(props) {
         );
     } else {
         return (
-            <button type="button" className="reorder-button" onClick={() => { props.reorderPhotos(props.photoData, []) }}>
+            <button type="button" className="reorder-button" onClick={ () => { props.reorderPhotos(props.photoData, []) } }>
                 Reorder
             </button>
         );
