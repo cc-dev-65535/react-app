@@ -1,5 +1,5 @@
 import './Gallery.css';
-import { Photo } from './Photo.js';
+import { Photo } from '../photo/Photo.js';
 
 function Gallery(props) {
     if (props.loading) {

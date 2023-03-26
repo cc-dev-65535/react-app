@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import { Gallery } from './Gallery.js';
-import { Button } from './Button.js';
+import { Gallery } from '../gallery/Gallery.js';
+import { Button } from '../button/Button.js';
 
 function App() {
   const url = 'http://jsonplaceholder.typicode.com/photos';
