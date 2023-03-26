@@ -1,16 +1,23 @@
-import { useState, useEffect } from 'react';
 import './Gallery.css';
 import { Photo } from './Photo.js';
 
 function Gallery(props) {
-    if (loading) {
-        <div className="gallery">
-            <p>LOADING...</p>
-        </div>
+    if (props.loading) {
+        return (
+            <div className="gallery">
+                <p>LOADING...</p>
+            </div>
+        );
+    } else if (props.error) {
+        return (
+            <div className="gallery">
+                <p>ERROR</p>
+            </div>
+        );
     } else {
         return (
             <div className="gallery">
-                {photoData.map((photo, i) => {
+                {props.photoData.map((photo, i) => {
                     return <Photo {... photo} key={i} />
                 })}            
             </div>

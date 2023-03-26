@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
 import './App.css';
 import { Gallery } from './Gallery.js';
+import { Button } from './Button.js';
 
 function App() {
   const url = 'http://jsonplaceholder.typicode.com/photos';
@@ -29,8 +30,8 @@ function App() {
 
   return (
     <div className="app">
-      <Gallery />
-      <button type="button">Reorder</button>
+      <Gallery photoData={photoData} loading={loading} error={error} />
+      <Button loading={loading} error={error} />
     </div>
   );
 }
