@@ -1,20 +1,19 @@
-//import './Button.css';
-import { Photo } from './Photo.js';
+import './Button.css';
 
 function Button(props) {
     if (props.loading) {
         return (
-            <div className="reorder-button">
+            <div>
             </div>
         );
     } else if (props.error) {
         return (
-            <div className="reorder-button">
+            <div>
             </div>
         );
     } else {
         return (
-            <button type="button" onClick={props.reorderPhotos}>Reorder</button>
+            <button type="button" className="reorder-button" onClick={() => { props.reorderPhotos(props.photoData, []) }}>Reorder</button>
         );
     }
 }

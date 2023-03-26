@@ -11,7 +11,7 @@ function Gallery(props) {
     } else if (props.error) {
         return (
             <div className="gallery">
-                <p>ERROR</p>
+                <p>ERROR!</p>
             </div>
         );
     } else {
