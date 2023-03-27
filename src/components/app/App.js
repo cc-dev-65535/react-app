@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import { Gallery } from '../gallery/Gallery.js';
 import { Button } from '../button/Button.js';
+import { storePhotos } from '../../storage.js';
 
 function App() {
   const url = 'http://jsonplaceholder.typicode.com/photos';
